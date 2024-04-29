@@ -526,13 +526,13 @@ chees_wi_autogen/timestamp: \
 	D:/Dev/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	D:/Dev/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	D:/Dev/repoQt/chees_wi/CMakeLists.txt \
-	D:/Dev/repoQt/chees_wi/ChessBoardWidget.cpp \
-	D:/Dev/repoQt/chees_wi/ChessBoardWidget.h \
 	D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
 	D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
 	D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
 	D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CMakeSystem.cmake \
 	D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/moc_predefs.h \
+	D:/Dev/repoQt/chees_wi/chessboardwidget.cpp \
+	D:/Dev/repoQt/chees_wi/chessboardwidget.h \
 	D:/Dev/repoQt/chees_wi/main.cpp \
 	D:/Dev/repoQt/chees_wi/mainwindow.cpp \
 	D:/Dev/repoQt/chees_wi/mainwindow.h \

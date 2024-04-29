@@ -27,8 +27,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         resources/bishop.png resources/bishop1.png resources/horse.png resources/horse1.png resources/king.png resources/king1.png resources/pawn.png resources/pawn1.png resources/queen.png resources/queen1.png resources/rook.png resources/rook1.png
-        ChessBoardWidget.cpp
-        ChessBoardWidget.h
+        chessboardwidget.h chessboardwidget.cpp
+
+
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET chees_wi APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

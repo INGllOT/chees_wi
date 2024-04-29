@@ -266,9 +266,9 @@
 	"HEADERS" : 
 	[
 		[
-			"D:/Dev/repoQt/chees_wi/ChessBoardWidget.h",
+			"D:/Dev/repoQt/chees_wi/chessboardwidget.h",
 			"MU",
-			"EWIEGA46WW/moc_ChessBoardWidget.cpp",
+			"EWIEGA46WW/moc_chessboardwidget.cpp",
 			null
 		],
 		[
@@ -349,7 +349,7 @@
 	"SETTINGS_FILE" : "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/chees_wi_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "D:/Dev/repoQt/chees_wi/ChessBoardWidget.cpp", "MU", null ],
+		[ "D:/Dev/repoQt/chees_wi/chessboardwidget.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/main.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/mainwindow.cpp", "MU", null ]
 	],

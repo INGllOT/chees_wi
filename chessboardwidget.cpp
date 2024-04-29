@@ -1,8 +1,11 @@
 #include <QtWidgets>
+#include <QPixmap>
+#include <QLabel>
+#include "chessboardwidget.h"
 
-class ChessBoardWidget : public QWidget {
-public:
-    ChessBoardWidget(QWidget *parent = nullptr) : QWidget(parent) {
+
+
+ChessBoardWidget::ChessBoardWidget(QWidget *parent) : QWidget(parent) {
         QVBoxLayout *layout = new QVBoxLayout(this);
         QHBoxLayout *mainLayout = new QHBoxLayout;
 
@@ -24,21 +27,6 @@ public:
             for(int col = 0; col < 8; ++col) {
                 QPushButton *button = new QPushButton(this);
                 button->setFixedSize(60, 60); // Ustawienie rozmiaru przycisku
-
-
-                // Ustawienie figur na planszy
-                if(row == 0 || row == 7) {
-                    const char* piece = " ";
-                    if(row == 0) {
-                        piece = startingPosition[row][col].toLatin1();
-                    } else if(row == 7) {
-                        piece = startingPosition[row][col].toUpper().toLatin1();
-                    }
-                    button->setText(QString(piece));
-                } else if(row == 1 || row == 6) {
-                    button->setText("P");
-                }
-
 
                 if((row + col) % 2 == 0) {
                     button->setStyleSheet("background-color: white;");
@@ -88,12 +76,4 @@ public:
         layout->addLayout(mainLayout);
         layout->addWidget(resetButton, 0, Qt::AlignCenter);
         setLayout(layout);
-
-
-
-    }
-
-public:
-    const QString startingPosition[8] = {"rnbqkbnr", "pppppppp", "        ", "        ",
-                                         "        ", "        ", "PPPPPPPP", "RNBQKBNR"};
-};
+}
