@@ -19,6 +19,7 @@ private:
     // Methods for creating the chessboard and captured piece sections
     void createChessBoard();
     void createCapturedPiecesLayouts();
+    void handleResetButtonClick();
 };
 
 #endif // CHESSBOARDWIDGET_H

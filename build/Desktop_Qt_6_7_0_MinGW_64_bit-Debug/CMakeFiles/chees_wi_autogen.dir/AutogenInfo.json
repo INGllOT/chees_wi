@@ -276,6 +276,24 @@
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"D:/Dev/repoQt/chees_wi/pawn.h",
+			"MU",
+			"EWIEGA46WW/moc_pawn.cpp",
+			null
+		],
+		[
+			"D:/Dev/repoQt/chees_wi/player.h",
+			"MU",
+			"EWIEGA46WW/moc_player.cpp",
+			null
+		],
+		[
+			"D:/Dev/repoQt/chees_wi/rook.h",
+			"MU",
+			"EWIEGA46WW/moc_rook.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -351,7 +369,10 @@
 	[
 		[ "D:/Dev/repoQt/chees_wi/chessboardwidget.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/main.cpp", "MU", null ],
-		[ "D:/Dev/repoQt/chees_wi/mainwindow.cpp", "MU", null ]
+		[ "D:/Dev/repoQt/chees_wi/mainwindow.cpp", "MU", null ],
+		[ "D:/Dev/repoQt/chees_wi/pawn.cpp", "MU", null ],
+		[ "D:/Dev/repoQt/chees_wi/player.cpp", "MU", null ],
+		[ "D:/Dev/repoQt/chees_wi/rook.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

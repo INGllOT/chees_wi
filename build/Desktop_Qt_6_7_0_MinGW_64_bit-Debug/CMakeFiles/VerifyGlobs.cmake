@@ -44,10 +44,16 @@ set(OLD_GLOB
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/EWIEGA46WW/moc_ChessBoardWidget.cpp"
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/EWIEGA46WW/moc_mainwindow.cpp"
+  "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/EWIEGA46WW/moc_pawn.cpp"
+  "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/EWIEGA46WW/moc_piece.cpp"
+  "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/EWIEGA46WW/moc_rook.cpp"
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/mocs_compilation.cpp"
   "D:/Dev/repoQt/chees_wi/chessboardwidget.cpp"
   "D:/Dev/repoQt/chees_wi/main.cpp"
   "D:/Dev/repoQt/chees_wi/mainwindow.cpp"
+  "D:/Dev/repoQt/chees_wi/pawn.cpp"
+  "D:/Dev/repoQt/chees_wi/player.cpp"
+  "D:/Dev/repoQt/chees_wi/rook.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -70,6 +76,9 @@ set(OLD_GLOB
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/moc_predefs.h"
   "D:/Dev/repoQt/chees_wi/chessboardwidget.h"
   "D:/Dev/repoQt/chees_wi/mainwindow.h"
+  "D:/Dev/repoQt/chees_wi/pawn.h"
+  "D:/Dev/repoQt/chees_wi/player.h"
+  "D:/Dev/repoQt/chees_wi/rook.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

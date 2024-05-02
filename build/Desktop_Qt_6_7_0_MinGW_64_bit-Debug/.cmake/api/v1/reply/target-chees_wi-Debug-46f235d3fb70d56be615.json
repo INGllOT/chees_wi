@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 74,
+				"line" : 79,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 57,
+				"line" : 62,
 				"parent" : 0
 			},
 			{
@@ -365,18 +365,21 @@
 				0,
 				1,
 				2,
-				19
+				19,
+				21,
+				23,
+				25
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "chees_wi_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "chees_wi_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "chees_wi_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "chees_wi::@6890427a1f51a3e7e1df",
@@ -489,7 +492,10 @@
 				0,
 				1,
 				2,
-				19
+				19,
+				21,
+				23,
+				25
 			]
 		},
 		{
@@ -498,7 +504,10 @@
 			[
 				3,
 				18,
-				20
+				20,
+				22,
+				24,
+				26
 			]
 		},
 		{
@@ -507,7 +516,7 @@
 			[
 				4,
 				5,
-				21
+				27
 			]
 		},
 		{
@@ -532,7 +541,7 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				22
+				28
 			]
 		}
 	],
@@ -641,6 +650,39 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "chessboardwidget.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "player.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "player.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "pawn.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "pawn.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "rook.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "rook.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

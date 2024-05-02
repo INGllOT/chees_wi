@@ -28,6 +28,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         resources/bishop.png resources/bishop1.png resources/horse.png resources/horse1.png resources/king.png resources/king1.png resources/pawn.png resources/pawn1.png resources/queen.png resources/queen1.png resources/rook.png resources/rook1.png
         chessboardwidget.h chessboardwidget.cpp
+        player.h player.cpp
+
+        pawn.h pawn.cpp
+        rook.h rook.cpp
+
 
 
 
