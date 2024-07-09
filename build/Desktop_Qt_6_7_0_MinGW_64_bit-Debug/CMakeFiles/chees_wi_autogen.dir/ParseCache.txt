@@ -883,10 +883,15 @@ D:/Dev/repoQt/chees_wi/pawn.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qvectornd.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h
@@ -1095,6 +1100,11 @@ D:/Dev/repoQt/chees_wi/pawn.h
  mdp:D:/Dev/repoQt/chees_wi/pawn.h
 D:/Dev/repoQt/chees_wi/piece.h
  mmc:Q_OBJECT
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/QList
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/QObject
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/QRect
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/QSize
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/QSizeF
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/q20functional.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/q20memory.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/q20type_traits.h
@@ -1124,10 +1134,16 @@ D:/Dev/repoQt/chees_wi/piece.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qcontainerinfo.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qcontainertools_impl.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qcontiguouscache.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qcoreapplication_platform.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qcoreevent.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qdatastream.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qdeadlinetimer.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qdebug.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qelapsedtimer.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qendian.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qeventloop.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qexceptionhandling.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qflags.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qfloat16.h
@@ -1146,6 +1162,7 @@ D:/Dev/repoQt/chees_wi/piece.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qline.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qlist.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qlocale.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qlogging.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qmalloc.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qmap.h
@@ -1155,6 +1172,7 @@ D:/Dev/repoQt/chees_wi/piece.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qmetatype.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qminmax.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qnamespace.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qnativeinterface.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qnumeric.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qobject.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qobject_impl.h
@@ -1214,36 +1232,55 @@ D:/Dev/repoQt/chees_wi/piece.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qversiontagging.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qxptype_traits.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtCore/qyieldcpu.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/QMouseEvent
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/QTransform
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qaction.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qbitmap.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qbrush.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qcolor.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qcursor.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qevent.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qeventpoint.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qfont.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qfontinfo.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qfontmetrics.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qguiapplication_platform.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qicon.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qimage.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qinputdevice.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qinputmethod.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qkeysequence.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qpaintdevice.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qpalette.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qpicture.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qpixelformat.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qpixmap.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qpointingdevice.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qpolygon.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qregion.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qrgb.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qrgba64.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qscreen.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qscreen_platform.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qtextdocument.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qtgui-config.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qtguiexports.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qtguiglobal.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qtransform.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qvector2d.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qvectornd.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h
+ mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h
  mdp:D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h
@@ -1839,3 +1876,5 @@ D:/Dev/repoQt/chees_wi/pawn.cpp
 D:/Dev/repoQt/chees_wi/piece.cpp
 D:/Dev/repoQt/chees_wi/player.cpp
 D:/Dev/repoQt/chees_wi/rook.cpp
+D:/Dev/repoQt/chees_wi/board.h
+D:/Dev/repoQt/chees_wi/board.cpp

@@ -89,17 +89,17 @@ build CMakeFiles/chees_wi.dir/player.cpp.obj: CXX_COMPILER__chees_wi_unscanned_D
   OBJECT_DIR = CMakeFiles\chees_wi.dir
   OBJECT_FILE_DIR = CMakeFiles\chees_wi.dir
 
-build CMakeFiles/chees_wi.dir/pawn.cpp.obj: CXX_COMPILER__chees_wi_unscanned_Debug D$:/Dev/repoQt/chees_wi/pawn.cpp || cmake_object_order_depends_target_chees_wi
+build CMakeFiles/chees_wi.dir/piece.cpp.obj: CXX_COMPILER__chees_wi_unscanned_Debug D$:/Dev/repoQt/chees_wi/piece.cpp || cmake_object_order_depends_target_chees_wi
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\chees_wi.dir\pawn.cpp.obj.d
+  DEP_FILE = CMakeFiles\chees_wi.dir\piece.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -ID:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/include -isystem D:/Dev/Qt/6.7.0/mingw_64/include/QtCore -isystem D:/Dev/Qt/6.7.0/mingw_64/include -isystem D:/Dev/Qt/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets -isystem D:/Dev/Qt/6.7.0/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\chees_wi.dir
   OBJECT_FILE_DIR = CMakeFiles\chees_wi.dir
 
-build CMakeFiles/chees_wi.dir/rook.cpp.obj: CXX_COMPILER__chees_wi_unscanned_Debug D$:/Dev/repoQt/chees_wi/rook.cpp || cmake_object_order_depends_target_chees_wi
+build CMakeFiles/chees_wi.dir/board.cpp.obj: CXX_COMPILER__chees_wi_unscanned_Debug D$:/Dev/repoQt/chees_wi/board.cpp || cmake_object_order_depends_target_chees_wi
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\chees_wi.dir\rook.cpp.obj.d
+  DEP_FILE = CMakeFiles\chees_wi.dir\board.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -ID:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/include -isystem D:/Dev/Qt/6.7.0/mingw_64/include/QtCore -isystem D:/Dev/Qt/6.7.0/mingw_64/include -isystem D:/Dev/Qt/6.7.0/mingw_64/mkspecs/win32-g++ -isystem D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets -isystem D:/Dev/Qt/6.7.0/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\chees_wi.dir
@@ -113,7 +113,7 @@ build CMakeFiles/chees_wi.dir/rook.cpp.obj: CXX_COMPILER__chees_wi_unscanned_Deb
 #############################################
 # Link the executable chees_wi.exe
 
-build chees_wi.exe: CXX_EXECUTABLE_LINKER__chees_wi_Debug CMakeFiles/chees_wi.dir/chees_wi_autogen/mocs_compilation.cpp.obj CMakeFiles/chees_wi.dir/main.cpp.obj CMakeFiles/chees_wi.dir/mainwindow.cpp.obj CMakeFiles/chees_wi.dir/chessboardwidget.cpp.obj CMakeFiles/chees_wi.dir/player.cpp.obj CMakeFiles/chees_wi.dir/pawn.cpp.obj CMakeFiles/chees_wi.dir/rook.cpp.obj | D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Gui.a D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Core.a D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a || chees_wi_autogen chees_wi_autogen_timestamp_deps
+build chees_wi.exe: CXX_EXECUTABLE_LINKER__chees_wi_Debug CMakeFiles/chees_wi.dir/chees_wi_autogen/mocs_compilation.cpp.obj CMakeFiles/chees_wi.dir/main.cpp.obj CMakeFiles/chees_wi.dir/mainwindow.cpp.obj CMakeFiles/chees_wi.dir/chessboardwidget.cpp.obj CMakeFiles/chees_wi.dir/player.cpp.obj CMakeFiles/chees_wi.dir/piece.cpp.obj CMakeFiles/chees_wi.dir/board.cpp.obj | D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Gui.a D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Core.a D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a || chees_wi_autogen chees_wi_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a  D:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Gui.a  D:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/Dev/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -216,7 +216,7 @@ build chees_wi_autogen/timestamp chees_wi_autogen/mocs_compilation.cpp | ${cmake
 #############################################
 # Phony custom command for CMakeFiles\chees_wi_autogen_timestamp_deps
 
-build CMakeFiles/chees_wi_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/chees_wi_autogen_timestamp_deps: phony D$:/Dev/Qt/6.7.0/mingw_64/./bin/moc.exe D$:/Dev/Qt/6.7.0/mingw_64/./bin/uic.exe D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Core.a D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a
+build CMakeFiles/chees_wi_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/chees_wi_autogen_timestamp_deps: phony D$:/Dev/Qt/6.7.0/mingw_64/./bin/moc.exe D$:/Dev/Qt/6.7.0/mingw_64/./bin/uic.exe D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Widgets.a D$:/Dev/Qt/6.7.0/mingw_64/lib/libQt6Core.a
 
 
 #############################################

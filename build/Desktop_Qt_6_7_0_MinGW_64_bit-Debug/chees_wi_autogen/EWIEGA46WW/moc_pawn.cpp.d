@@ -172,10 +172,15 @@ D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autoge
   D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qvectornd.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \

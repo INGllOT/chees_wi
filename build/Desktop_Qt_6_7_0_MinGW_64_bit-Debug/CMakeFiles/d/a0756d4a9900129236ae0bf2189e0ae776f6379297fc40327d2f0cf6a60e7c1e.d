@@ -171,11 +171,16 @@ chees_wi_autogen/timestamp: \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qvectornd.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QGridLayout \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QLabel \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QMainWindow \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/QWidget \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qboxlayout.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qframe.h \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qgridlayout.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlabel.h \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlayout.h \
+  D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/Dev/Qt/6.7.0/mingw_64/include/QtWidgets/qtabwidget.h \
@@ -561,6 +566,8 @@ chees_wi_autogen/timestamp: \
   D:/Dev/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/Dev/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   D:/Dev/repoQt/chees_wi/CMakeLists.txt \
+  D:/Dev/repoQt/chees_wi/board.cpp \
+  D:/Dev/repoQt/chees_wi/board.h \
   .qtc/package-manager/auto-setup.cmake \
   CMakeFiles/3.27.7/CMakeCXXCompiler.cmake \
   CMakeFiles/3.27.7/CMakeRCCompiler.cmake \
@@ -572,9 +579,7 @@ chees_wi_autogen/timestamp: \
   D:/Dev/repoQt/chees_wi/mainwindow.cpp \
   D:/Dev/repoQt/chees_wi/mainwindow.h \
   D:/Dev/repoQt/chees_wi/mainwindow.ui \
-  D:/Dev/repoQt/chees_wi/pawn.cpp \
-  D:/Dev/repoQt/chees_wi/pawn.h \
+  D:/Dev/repoQt/chees_wi/piece.cpp \
+  D:/Dev/repoQt/chees_wi/piece.h \
   D:/Dev/repoQt/chees_wi/player.cpp \
-  D:/Dev/repoQt/chees_wi/player.h \
-  D:/Dev/repoQt/chees_wi/rook.cpp \
-  D:/Dev/repoQt/chees_wi/rook.h
+  D:/Dev/repoQt/chees_wi/player.h

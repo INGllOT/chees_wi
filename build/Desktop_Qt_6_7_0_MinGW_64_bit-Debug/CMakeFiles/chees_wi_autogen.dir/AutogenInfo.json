@@ -266,6 +266,12 @@
 	"HEADERS" : 
 	[
 		[
+			"D:/Dev/repoQt/chees_wi/board.h",
+			"MU",
+			"EWIEGA46WW/moc_board.cpp",
+			null
+		],
+		[
 			"D:/Dev/repoQt/chees_wi/chessboardwidget.h",
 			"MU",
 			"EWIEGA46WW/moc_chessboardwidget.cpp",
@@ -278,21 +284,15 @@
 			null
 		],
 		[
-			"D:/Dev/repoQt/chees_wi/pawn.h",
+			"D:/Dev/repoQt/chees_wi/piece.h",
 			"MU",
-			"EWIEGA46WW/moc_pawn.cpp",
+			"EWIEGA46WW/moc_piece.cpp",
 			null
 		],
 		[
 			"D:/Dev/repoQt/chees_wi/player.h",
 			"MU",
 			"EWIEGA46WW/moc_player.cpp",
-			null
-		],
-		[
-			"D:/Dev/repoQt/chees_wi/rook.h",
-			"MU",
-			"EWIEGA46WW/moc_rook.cpp",
 			null
 		]
 	],
@@ -367,12 +367,12 @@
 	"SETTINGS_FILE" : "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/chees_wi_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "D:/Dev/repoQt/chees_wi/board.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/chessboardwidget.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/main.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/mainwindow.cpp", "MU", null ],
-		[ "D:/Dev/repoQt/chees_wi/pawn.cpp", "MU", null ],
-		[ "D:/Dev/repoQt/chees_wi/player.cpp", "MU", null ],
-		[ "D:/Dev/repoQt/chees_wi/rook.cpp", "MU", null ]
+		[ "D:/Dev/repoQt/chees_wi/piece.cpp", "MU", null ],
+		[ "D:/Dev/repoQt/chees_wi/player.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

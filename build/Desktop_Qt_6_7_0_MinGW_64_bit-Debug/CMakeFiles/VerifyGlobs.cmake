@@ -41,6 +41,7 @@ endif()
 # _directory_contents at D:/Dev/Qt/6.7.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/Dev/repoQt/chees_wi/*.cpp")
 set(OLD_GLOB
+  "D:/Dev/repoQt/chees_wi/board.cpp"
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/3.27.7/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/EWIEGA46WW/moc_ChessBoardWidget.cpp"
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/EWIEGA46WW/moc_mainwindow.cpp"
@@ -51,9 +52,8 @@ set(OLD_GLOB
   "D:/Dev/repoQt/chees_wi/chessboardwidget.cpp"
   "D:/Dev/repoQt/chees_wi/main.cpp"
   "D:/Dev/repoQt/chees_wi/mainwindow.cpp"
-  "D:/Dev/repoQt/chees_wi/pawn.cpp"
+  "D:/Dev/repoQt/chees_wi/piece.cpp"
   "D:/Dev/repoQt/chees_wi/player.cpp"
-  "D:/Dev/repoQt/chees_wi/rook.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -72,13 +72,13 @@ endif()
 # _directory_contents at D:/Dev/Qt/6.7.0/mingw_64/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:55 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "D:/Dev/repoQt/chees_wi/*.h")
 set(OLD_GLOB
+  "D:/Dev/repoQt/chees_wi/board.h"
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/include/ui_mainwindow.h"
   "D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/chees_wi_autogen/moc_predefs.h"
   "D:/Dev/repoQt/chees_wi/chessboardwidget.h"
   "D:/Dev/repoQt/chees_wi/mainwindow.h"
-  "D:/Dev/repoQt/chees_wi/pawn.h"
+  "D:/Dev/repoQt/chees_wi/piece.h"
   "D:/Dev/repoQt/chees_wi/player.h"
-  "D:/Dev/repoQt/chees_wi/rook.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

@@ -30,8 +30,10 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         chessboardwidget.h chessboardwidget.cpp
         player.h player.cpp
 
-        pawn.h pawn.cpp
-        rook.h rook.cpp
+        piece.h piece.cpp
+        board.h board.cpp
+
+
 
 
 
