@@ -22,6 +22,9 @@ ChessBoardWidget::ChessBoardWidget(QWidget *parent) : QWidget(parent) {
         resetButton->setFixedSize(100, 40); // Ustawienie rozmiaru przycisku
 
 
+        QGridLayout *gridLayout1 = new QGridLayout;
+
+
         // Tworzenie pola planszy szachowej
         gridLayout = new QGridLayout;
         for(int row = 0; row < 8; ++row) {
@@ -31,93 +34,92 @@ ChessBoardWidget::ChessBoardWidget(QWidget *parent) : QWidget(parent) {
                 // Ustawienie obrazka pionka na polu planszy
                 if(row == 0 && (col == 0 || col == 7)) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook.png"), this, "background-color: gray;");
                     }
                 } else if(row == 0 && (col == 6 || col == 1)) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse.png"), this, "background-color: gray;");
                     }
                 } else if(row == 0 && (col == 2 || col == 5)) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop.png"), this, "background-color: gray;");
                     }
                 } else if(row == 0 && col == 3) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen.png"), this, "background-color: gray;");
                     }
                 } else if(row == 0 && col == 4) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king.png"), this, "background-color: gray;");
                     }
                 } else if(row == 1) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn.png"), this, "background-color: gray;");
                     }
                 } else if(row == 7 && (col == 6 || col == 1)) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse1.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse1.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse1.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse1.png"), this, "background-color: gray;");
                     }
                 } else if(row == 7 && col == 0) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "background-color: gray;");
                     }
                 } else if(row == 7 && col == 7) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "background-color: gray;");
                     }
                 } else if(row == 7 && (col == 2 || col == 5)) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop1.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop1.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop1.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop1.png"), this, "background-color: gray;");
                     }
                 } else if(row == 7 && col == 3) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen1.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen1.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen1.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen1.png"), this, "background-color: gray;");
                     }
                 } else if(row == 7 && col == 4) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king1.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king1.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king1.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king1.png"), this, "background-color: gray;");
                     }
                 } else if(row == 6) {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn1.png"), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn1.png"), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn1.png"), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn1.png"), this, "background-color: gray;");
                     }
                 } else {
                     if((row + col) % 2 == 0) {
-                        piece = new Piece(row, col, QPixmap(""), this, gridLayout, "background-color: white;");
+                        piece = new Piece(row, col, QPixmap(""), this, "background-color: white;");
                     } else {
-                        piece = new Piece(row, col, QPixmap(""), this, gridLayout, "background-color: gray;");
+                        piece = new Piece(row, col, QPixmap(""), this, "background-color: gray;");
                     }
                 }
                 connect(piece, &Piece::clickedPiece, this, &ChessBoardWidget::onPieceClicked);
 
                 connect(piece, &Piece::clickedPiece, [=](int x, int y){
-                   // qDebug() << "Hello World! Piece clicked at position: (" << x << ", " << y << ")";
                 });
                 gridLayout->addWidget(piece, row, col);
             }
@@ -169,18 +171,20 @@ void ChessBoardWidget::onPieceClicked(int row, int col) {
         selectedX = col;
         selectedY = row;
         pieceSelected = true;
+        qDebug() << "pieceSelected";
+
     } else {
 
         // if (board.isValidMove(selectedY, selectedX, row, col)) {
             board.movePiece(selectedY, selectedX, row, col);
-            auto piece1 = qobject_cast<Piece*>(gridLayout->itemAtPosition(row, col)->widget());
-            auto piece2 = qobject_cast<Piece*>(gridLayout->itemAtPosition(selectedY, selectedX)->widget());
-            if (piece2) {
-                piece2->setPosition(row, col);
-                gridLayout->addWidget(piece2, row, col);
+            auto piece = qobject_cast<Piece*>(gridLayout->itemAtPosition(selectedY, selectedX)->widget());
+            if (piece) {
+                piece->setPosition(row, col);
+                gridLayout->addWidget(piece, row, col);
             }
 
             pieceSelected = false;
+            qDebug() << "!pieceSelected";
             update();
         }
     }

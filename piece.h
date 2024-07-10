@@ -12,7 +12,7 @@ class Piece : public QLabel {
     Q_OBJECT
 
 public:
-    explicit Piece(int x, int y, const QPixmap& pixmap, QWidget* parent = nullptr, QGridLayout* qGridLayout = nullptr, const QString& color = "");
+    explicit Piece(int x, int y, const QPixmap& pixmap, QWidget* parent = nullptr, const QString& color = "");
 
     // Metody dostępowe do współrzędnych
     int getX() const;
@@ -20,6 +20,7 @@ public:
     void setX(int x);
     void setY(int y);
     void setPosition(int row, int col);
+    QString getBackgroundColor() const;
 
 
 signals:
@@ -31,7 +32,8 @@ protected:
 private:
     int m_x; // Współrzędna x
     int m_y; // Współrzędna y
-    QGridLayout* qGridLayout;
+    QString color;
+
 };
 
 #endif // PIECE_H
