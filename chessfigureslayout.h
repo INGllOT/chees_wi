@@ -1,14 +1,14 @@
-#ifndef CHESSBOARDWIDGET_H
-#define CHESSBOARDWIDGET_H
+#ifndef CHESSFIGURESLAYOUT_H
+#define CHESSFIGURESLAYOUT_H
 
 #include "board.h"
 #include <QtWidgets>
 #include <QPixmap>
 #include <QLabel>
 
-class ChessBoardWidget : public QWidget {
+class ChessFiguresLayout : public QWidget{
 public:
-    ChessBoardWidget(QWidget *parent = nullptr);
+    ChessFiguresLayout(QWidget *parent = nullptr);
 
 private:
     // Member variables
@@ -29,4 +29,4 @@ private:
 
 };
 
-#endif // CHESSBOARDWIDGET_H
+#endif // CHESSFIGURESLAYOUT_H

@@ -278,6 +278,12 @@
 			null
 		],
 		[
+			"D:/Dev/repoQt/chees_wi/chessfigureslayout.h",
+			"MU",
+			"EWIEGA46WW/moc_chessfigureslayout.cpp",
+			null
+		],
+		[
 			"D:/Dev/repoQt/chees_wi/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
@@ -369,6 +375,7 @@
 	[
 		[ "D:/Dev/repoQt/chees_wi/board.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/chessboardwidget.cpp", "MU", null ],
+		[ "D:/Dev/repoQt/chees_wi/chessfigureslayout.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/main.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/mainwindow.cpp", "MU", null ],
 		[ "D:/Dev/repoQt/chees_wi/piece.cpp", "MU", null ],

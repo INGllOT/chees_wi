@@ -32,6 +32,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 
         piece.h piece.cpp
         board.h board.cpp
+        chessfigureslayout.h chessfigureslayout.cpp
+
 
 
 

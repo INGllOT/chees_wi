@@ -575,6 +575,8 @@ chees_wi_autogen/timestamp: \
   chees_wi_autogen/moc_predefs.h \
   D:/Dev/repoQt/chees_wi/chessboardwidget.cpp \
   D:/Dev/repoQt/chees_wi/chessboardwidget.h \
+  D:/Dev/repoQt/chees_wi/chessfigureslayout.cpp \
+  D:/Dev/repoQt/chees_wi/chessfigureslayout.h \
   D:/Dev/repoQt/chees_wi/main.cpp \
   D:/Dev/repoQt/chees_wi/mainwindow.cpp \
   D:/Dev/repoQt/chees_wi/mainwindow.h \

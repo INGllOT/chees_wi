@@ -28,19 +28,9 @@ void Piece::setY(int y) {
     m_y = y;
 }
 
-QString Piece::getBackgroundColor() const {
-    QString styleSheet = this->styleSheet();
-    QRegularExpression regex("background-color:\\s*([^;]+);");
-    QRegularExpressionMatch match = regex.match(styleSheet);
-    if (match.hasMatch()) {
-        return match.captured(1).trimmed();
-    }
-    return QString();
-}
-
 
 void Piece::setPosition(int newRow, int newCol) {
-     qDebug() << "Hello World! Piece clicked at positio)";
+     qDebug() << "Hello World! Piece clicked at position: (" << newRow << ", " << newCol << ")";
 
     m_x = newRow;
     m_y = newCol;

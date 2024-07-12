@@ -10,7 +10,8 @@ public:
     bool hasPiece(int x, int y) const;
     Piece* getPiece(int x, int y) const;
     void movePiece(int startX, int startY, int endX, int endY);
-    Piece* board[8][8];
+    void setPiece(int startX, int startY, Piece* piece);
+    Piece* piece[8][8];
 
 };
 
