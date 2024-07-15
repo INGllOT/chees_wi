@@ -23,10 +23,7 @@ private:
     Board board;
 
     // Methods for creating the chessboard and captured piece sections
-    void handleResetButtonClick();
     QGridLayout* returnGridLayoutFromBoardMetrix();
-    void onPieceClicked(int row, int col);
-
 };
 
 #endif // CHESSBOARDWIDGET_H

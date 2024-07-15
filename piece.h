@@ -20,7 +20,7 @@ public:
     void setX(int x);
     void setY(int y);
     void setPosition(int row, int col);
-    QString getBackgroundColor() const;
+    QString getColor() const;
 
 
 signals:

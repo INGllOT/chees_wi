@@ -55,6 +55,7 @@ set(OLD_GLOB
   "D:/Dev/repoQt/chees_wi/mainwindow.cpp"
   "D:/Dev/repoQt/chees_wi/piece.cpp"
   "D:/Dev/repoQt/chees_wi/player.cpp"
+  "D:/Dev/repoQt/chees_wi/rook.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -81,6 +82,7 @@ set(OLD_GLOB
   "D:/Dev/repoQt/chees_wi/mainwindow.h"
   "D:/Dev/repoQt/chees_wi/piece.h"
   "D:/Dev/repoQt/chees_wi/player.h"
+  "D:/Dev/repoQt/chees_wi/rook.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

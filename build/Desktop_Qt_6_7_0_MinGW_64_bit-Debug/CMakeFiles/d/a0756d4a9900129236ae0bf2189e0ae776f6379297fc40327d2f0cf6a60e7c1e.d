@@ -584,4 +584,6 @@ chees_wi_autogen/timestamp: \
   D:/Dev/repoQt/chees_wi/piece.cpp \
   D:/Dev/repoQt/chees_wi/piece.h \
   D:/Dev/repoQt/chees_wi/player.cpp \
-  D:/Dev/repoQt/chees_wi/player.h
+  D:/Dev/repoQt/chees_wi/player.h \
+  D:/Dev/repoQt/chees_wi/rook.cpp \
+  D:/Dev/repoQt/chees_wi/rook.h
