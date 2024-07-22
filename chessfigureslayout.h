@@ -17,6 +17,9 @@ private:
     QPushButton* playerButton_;
     QPushButton* resetButton_;
     QGridLayout *gridLayout;
+    QGridLayout *capturedWhiteLeftLayout;
+    QGridLayout *capturedBlackRightLayout;
+
     int selectedX, selectedY; // To keep track of the selected piece's position
     bool pieceSelected;
 

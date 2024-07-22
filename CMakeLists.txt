@@ -34,6 +34,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         board.h board.cpp
         chessfigureslayout.h chessfigureslayout.cpp
         rook.h rook.cpp
+        horse.h horse.cpp
+        bishop.h bishop.cpp
+        queen.h queen.cpp
+        king.h king.cpp
+        pawn.h pawn.cpp
 
 
 

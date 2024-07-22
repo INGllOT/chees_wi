@@ -2,7 +2,13 @@
 #include <QPixmap>
 #include <QLabel>
 #include "chessfigureslayout.h"
+#include "bishop.h"
+#include "horse.h"
+#include "king.h"
+#include "pawn.h"
 #include "piece.h"
+#include "queen.h"
+#include "rook.h"
 
 
 ChessFiguresLayout::ChessFiguresLayout(QWidget *parent) : QWidget(parent) {
@@ -10,11 +16,11 @@ ChessFiguresLayout::ChessFiguresLayout(QWidget *parent) : QWidget(parent) {
     QHBoxLayout *mainLayout = new QHBoxLayout;
 
 
-    // Dodawanie planszy i przycisku z nazwą gracza
-    playerButton_ = new QPushButton("Player's Turn: White", this);
+    // Ustawienie przycisku z kolejnoscia ruchu gracza
+    playerButton_ = new QPushButton("white", this);
     playerButton_->setFlat(true);
     playerButton_->setStyleSheet("font-weight: bold; background-color: lightblue;");
-    playerButton_->setFixedSize(180, 40); // Ustawienie rozmiaru przycisku
+    playerButton_->setFixedSize(180, 40);
     playerButton_->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
     playerButton_->setEnabled(false);
 
@@ -36,81 +42,81 @@ ChessFiguresLayout::ChessFiguresLayout(QWidget *parent) : QWidget(parent) {
             // Ustawienie obrazka pionka na polu planszy
             if(row == 0 && (col == 0 || col == 7)) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook.png"), this, "black");
+                    piece = new Rook(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook.png"), this, "black");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook.png"), this, "black");
+                    piece = new Rook(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook.png"), this, "black");
                 }
             } else if(row == 0 && (col == 6 || col == 1)) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse.png"), this, "black");
+                    piece = new Horse(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse.png"), this, "black");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse.png"), this, "black");
+                    piece = new Horse(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse.png"), this, "black");
                 }
             } else if(row == 0 && (col == 2 || col == 5)) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop.png"), this, "black");
+                    piece = new Bishop(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop.png"), this, "black");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop.png"), this, "black");
+                    piece = new Bishop(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop.png"), this, "black");
                 }
             } else if(row == 0 && col == 3) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen.png"), this, "black");
+                    piece = new Queen(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen.png"), this, "black");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen.png"), this, "black");
+                    piece = new Queen(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen.png"), this, "black");
                 }
             } else if(row == 0 && col == 4) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king.png"), this, "black");
+                    piece = new King(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king.png"), this, "black");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king.png"), this, "black");
+                    piece = new King(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king.png"), this, "black");
                 }
             } else if(row == 1) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn.png"), this, "black");
+                    piece = new Pawn(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn.png"), this, "black");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn.png"), this, "black");
+                    piece = new Pawn(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn.png"), this, "black");
                 }
             } else if(row == 7 && (col == 6 || col == 1)) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse1.png"), this, "white");
+                    piece = new Horse(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse1.png"), this, "white");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse1.png"), this, "white");
+                    piece = new Horse(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/horse1.png"), this, "white");
                 }
             } else if(row == 7 && col == 0) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "white");
+                    piece = new Rook(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "white");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "white");
+                    piece = new Rook(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "white");
                 }
             } else if(row == 7 && col == 7) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "white");
+                    piece = new Rook(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "white");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "white");
+                    piece = new Rook(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/rook1.png"), this, "white");
                 }
             } else if(row == 7 && (col == 2 || col == 5)) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop1.png"), this, "white");
+                    piece = new Bishop(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop1.png"), this, "white");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop1.png"), this, "white");
+                    piece = new Bishop(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/bishop1.png"), this, "white");
                 }
             } else if(row == 7 && col == 3) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen1.png"), this, "white");
+                    piece = new Queen(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen1.png"), this, "white");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen1.png"), this, "white");
+                    piece = new Queen(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/queen1.png"), this, "white");
                 }
             } else if(row == 7 && col == 4) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king1.png"), this, "white");
+                    piece = new King(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king1.png"), this, "white");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king1.png"), this, "white");
+                    piece = new King(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/king1.png"), this, "white");
                 }
             } else if(row == 6) {
                 if((row + col) % 2 == 0) {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn1.png"), this, "white");
+                    piece = new Pawn(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn1.png"), this, "white");
                 } else {
-                    piece = new Piece(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn1.png"), this, "white");
+                    piece = new Pawn(row, col, QPixmap("D:/Dev/repoQt/chees_wi/resources/pawn1.png"), this, "white");
                 }
             } else {
                 if((row + col) % 2 == 0) {
@@ -132,32 +138,34 @@ ChessFiguresLayout::ChessFiguresLayout(QWidget *parent) : QWidget(parent) {
     returnGridLayoutFromBoardMetrix();
 
     // Tworzenie pól na zbite figury po lewej stronie planszy
-    QGridLayout *capturedWhiteLeftLayout = new QGridLayout;
+    capturedWhiteLeftLayout = new QGridLayout;
     for(int row = 0; row < 8; ++row) {
         for(int col = 0; col < 2; ++col) {
-            QPushButton *button = new QPushButton(this);
-            button->setFixedSize(60, 60); // Ustawienie rozmiaru przycisku
+            QLabel *square = new QLabel(this);
+            square->setFixedSize(60, 60);
+
+            square->setFixedSize(60, 60); // Ustawienie rozmiaru przycisku
             if((row + col) % 2 == 0) {
-                button->setStyleSheet("background-color: white;");
+                square->setStyleSheet("background-color: white;");
             } else {
-                button->setStyleSheet("background-color: gray;");
+                square->setStyleSheet("background-color: gray;");
             }
-            capturedWhiteLeftLayout->addWidget(button, row, col);
+            capturedWhiteLeftLayout->addWidget(square, row, col);
         }
     }
 
     // Tworzenie pól na zbite figury po prawej stronie planszy
-    QGridLayout *capturedBlackRightLayout = new QGridLayout;
+    capturedBlackRightLayout = new QGridLayout;
     for(int row = 0; row < 8; ++row) {
         for(int col = 0; col < 2; ++col) {
-            QPushButton *button = new QPushButton(this);
-            button->setFixedSize(60, 60); // Ustawienie rozmiaru przycisku
+            QLabel *square = new QLabel(this);
+            square->setFixedSize(60, 60);
             if((row + col) % 2 == 0) {
-                button->setStyleSheet("background-color: white;");
+                square->setStyleSheet("background-color: white;");
             } else {
-                button->setStyleSheet("background-color: gray;");
+                square->setStyleSheet("background-color: gray;");
             }
-            capturedBlackRightLayout->addWidget(button, row, col);
+            capturedBlackRightLayout->addWidget(square, row, col);
         }
     }
 
@@ -188,19 +196,27 @@ void ChessFiguresLayout::onPieceClicked(int row, int col) {
 
     } else  {
 
-        board.movePiece(selectedY, selectedX, row, col);
         auto movingPiece = qobject_cast<Piece*>(gridLayout->itemAtPosition(selectedY, selectedX)->widget());
         auto destinationPiece = qobject_cast<Piece*>(gridLayout->itemAtPosition(row, col)->widget());
 
-        if (movingPiece) {
+        qDebug() << "Row and column" << selectedY << ", " << selectedX << ")";
+        qDebug() << "Row and column" << movingPiece->getRow() << ", " << destinationPiece->getColumn() << ")";
+
+        if(movingPiece->isValidMove(selectedY, selectedX, row , col, destinationPiece, movingPiece)){
+
+        if (movingPiece && movingPiece->getColor() == playerButton_->text()) {
+            // Sprawdzanie czy kolej gracza
+            qDebug() << "Sprawdzanie czy kolej gracza";
+
+           // board.movePiece(selectedY, selectedX, row, col);
 
             if(movingPiece->getColor() == destinationPiece->getColor()) {
                 // Poruszanie pionkiem w ten sam kolor
+                qDebug() << "Poruszanie pionkiem w ten sam kolor";
 
             } else if(movingPiece->getColor() != "none" && destinationPiece->getColor() == "none") {
                 // Poruszanie pionkiem w puste miejsce
-
-                qDebug() << "moving to empty field";
+                qDebug() << "Poruszanie pionkiem w puste miejsce";
 
                 movingPiece->setPosition(row, col);
                 gridLayout->addWidget(movingPiece, row, col);
@@ -211,9 +227,9 @@ void ChessFiguresLayout::onPieceClicked(int row, int col) {
                 update();
 
             } else if(destinationPiece->getColor() != "none" && movingPiece->getColor() != "none" && movingPiece->getColor() != destinationPiece->getColor()) {
-                // Poruszanie pionkiem w miejsce przeciwnego pionka
-
+                // Poruszanie pionkiem w miejsce przeciwnego pionka/ koloru
                 qDebug() << "kill move";
+                capturedBlackRightLayout->addWidget(destinationPiece, 1, 1);
 
                 movingPiece->setPosition(row, col);
                 gridLayout->addWidget(movingPiece, row, col);
@@ -224,9 +240,17 @@ void ChessFiguresLayout::onPieceClicked(int row, int col) {
 
                 update();
             }
-            playerButton_->setText("aaaaa");
+
+            if(movingPiece->getColor() == "white") {
+                // zmiana kolejnosci koloru po przejsciu ponka
+                playerButton_->setText("black");
+            } else {
+                playerButton_->setText("white");
+            }
+
             playerButton_->update();
         }
+ }
 
         pieceSelected = false;
         qDebug() << "!pieceSelected";
@@ -240,16 +264,6 @@ QGridLayout* ChessFiguresLayout::returnGridLayoutFromBoardMetrix(){
 
     for(int row = 0; row < 8; ++row) {
         for(int col = 0; col < 8; ++col) {
-
-            //Kolor planszy
-            QLabel *square = new QLabel(this);
-            square->setFixedSize(60, 60);
-
-            if((row + col) % 2 == 0) {
-                square->setStyleSheet("background-color: gray;");
-            } else {
-                square->setStyleSheet("background-color: white;");
-            }
 
             gridLayout->addWidget(board.piece[row][col], row, col);
         }

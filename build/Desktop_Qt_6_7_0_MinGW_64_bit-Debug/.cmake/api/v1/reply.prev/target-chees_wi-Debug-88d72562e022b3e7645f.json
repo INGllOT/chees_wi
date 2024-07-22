@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 83,
+				"line" : 88,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 66,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -369,7 +369,12 @@
 				21,
 				23,
 				25,
-				27
+				27,
+				29,
+				31,
+				33,
+				35,
+				37
 			]
 		}
 	],
@@ -497,7 +502,12 @@
 				21,
 				23,
 				25,
-				27
+				27,
+				29,
+				31,
+				33,
+				35,
+				37
 			]
 		},
 		{
@@ -510,7 +520,12 @@
 				22,
 				24,
 				26,
-				28
+				28,
+				30,
+				32,
+				34,
+				36,
+				38
 			]
 		},
 		{
@@ -519,7 +534,7 @@
 			[
 				4,
 				5,
-				29
+				39
 			]
 		},
 		{
@@ -544,7 +559,7 @@
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				30
+				40
 			]
 		}
 	],
@@ -697,6 +712,61 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "chessfigureslayout.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "rook.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "rook.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "horse.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "horse.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "bishop.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "bishop.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "queen.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "queen.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "king.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "king.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -22,6 +22,7 @@ ChessBoardWidget::ChessBoardWidget(QWidget *parent) : QWidget(parent) {
 
         returnGridLayoutFromBoardMetrix();
 
+
         // Tworzenie pól na zbite figury po lewej stronie planszy
         QGridLayout *capturedWhiteLeftLayout = new QGridLayout;
         for(int row = 0; row < 8; ++row) {
@@ -69,16 +70,18 @@ QGridLayout* ChessBoardWidget::returnGridLayoutFromBoardMetrix(){
         for(int col = 0; col < 8; ++col) {
 
             //Kolor planszy
-            QLabel *square = new QLabel(this);
-            square->setFixedSize(60, 60);
+            QLabel *square = nullptr;
 
             if((row + col) % 2 == 0) {
+                square = new QLabel(this);
+                square->setFixedSize(60, 60);
                 square->setStyleSheet("background-color: gray;");
             } else {
+                square = new QLabel(this);
+                square->setFixedSize(60, 60);
                 square->setStyleSheet("background-color: white;");
             }
 
-            // gridLayout->addWidget(board.piece[row][col], row, col);
             gridLayout->addWidget(square, row, col);
         }
     }

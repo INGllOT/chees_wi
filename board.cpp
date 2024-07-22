@@ -15,12 +15,14 @@ Piece* Board::getPiece(int x, int y) const {
 }
 
 void Board::movePiece(int startX, int startY, int endX, int endY) {
-    //Piece *buffor = piece[endX][endY];
-    piece[endX][endY] = piece[startX][startY];
-    piece[startX][startY] = nullptr;
+    piece[endX][endY]->setPosition(startX, startY);
+    piece[startX][startY]->setPosition(endX, endY);
 
-    // piece[startX][startY]->setPosition(endX, endY);
-    // piece[endX][endY]->setPosition(startX, startY);
+    Piece *buffor = piece[endX][endY];
+    piece[endX][endY] = piece[startX][startY];
+    piece[startX][startY] = buffor;
+
+
 
 }
 

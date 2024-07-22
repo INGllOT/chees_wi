@@ -565,6 +565,8 @@ chees_wi_autogen/timestamp: \
 	D:/Dev/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
 	D:/Dev/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
 	D:/Dev/repoQt/chees_wi/CMakeLists.txt \
+	D:/Dev/repoQt/chees_wi/bishop.cpp \
+	D:/Dev/repoQt/chees_wi/bishop.h \
 	D:/Dev/repoQt/chees_wi/board.cpp \
 	D:/Dev/repoQt/chees_wi/board.h \
 	D:/Dev/repoQt/chees_wi/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.qtc/package-manager/auto-setup.cmake \
@@ -576,13 +578,21 @@ chees_wi_autogen/timestamp: \
 	D:/Dev/repoQt/chees_wi/chessboardwidget.h \
 	D:/Dev/repoQt/chees_wi/chessfigureslayout.cpp \
 	D:/Dev/repoQt/chees_wi/chessfigureslayout.h \
+	D:/Dev/repoQt/chees_wi/horse.cpp \
+	D:/Dev/repoQt/chees_wi/horse.h \
+	D:/Dev/repoQt/chees_wi/king.cpp \
+	D:/Dev/repoQt/chees_wi/king.h \
 	D:/Dev/repoQt/chees_wi/main.cpp \
 	D:/Dev/repoQt/chees_wi/mainwindow.cpp \
 	D:/Dev/repoQt/chees_wi/mainwindow.h \
+	D:/Dev/repoQt/chees_wi/pawn.cpp \
+	D:/Dev/repoQt/chees_wi/pawn.h \
 	D:/Dev/repoQt/chees_wi/piece.cpp \
 	D:/Dev/repoQt/chees_wi/piece.h \
 	D:/Dev/repoQt/chees_wi/player.cpp \
 	D:/Dev/repoQt/chees_wi/player.h \
+	D:/Dev/repoQt/chees_wi/queen.cpp \
+	D:/Dev/repoQt/chees_wi/queen.h \
 	D:/Dev/repoQt/chees_wi/rook.cpp \
 	D:/Dev/repoQt/chees_wi/rook.h \
 	D:/Dev/repoQt/chees_wi/mainwindow.ui \
