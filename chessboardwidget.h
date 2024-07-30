@@ -17,13 +17,13 @@ private:
     QPushButton* playerButton_;
     QPushButton* resetButton_;
     QGridLayout *gridLayout;
-    int selectedX, selectedY; // To keep track of the selected piece's position
-    bool pieceSelected;
-
+    QGridLayout* returnGridLayoutFromBoardMetrix();
     Board board;
 
-    // Methods for creating the chessboard and captured piece sections
-    QGridLayout* returnGridLayoutFromBoardMetrix();
+    int selectedX, selectedY;
+    bool pieceSelected;
+
+
 };
 
 #endif // CHESSBOARDWIDGET_H

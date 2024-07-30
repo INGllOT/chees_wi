@@ -2,7 +2,7 @@
 using namespace std;
 
 
-Piece::Piece(int x, int y, const QPixmap& pixmap, QWidget* parent, const QString& color)
+Piece::Piece(int x, int y, const QPixmap& pixmap, QWidget* parent, const QString& color, const QString& name)
     : QLabel(parent), m_x(x), m_y(y), color(color) {
 
     setPixmap(pixmap);
@@ -29,16 +29,6 @@ void Piece::setRow(int x) {
     m_x = x;
 }
 
-// void Piece::setX(int x) {
-//     m_x = x;
-// }
-
-
-
-// void Piece::setY(int y) {
-//     m_y = y;
-// }
-
 void Piece::setPosition(int newRow, int newCol) {
      qDebug() << "Hello World! Piece clicked at position: (" << newRow << ", " << newCol << " "<< getColor() << ")";
 
@@ -55,5 +45,14 @@ QString Piece::getColor() const {
     return color;
 }
 
+
+void Piece::setColor(QString color) const {
+    color = color;
+}
+
+bool Piece::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece)  {
+
+    return false;
+}
 
 

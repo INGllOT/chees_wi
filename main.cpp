@@ -7,8 +7,8 @@
 int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
     QWidget window;
-    window.setWindowTitle("Chess Game");
-    window.resize(1000, 600);
+    window.setWindowTitle("Wojciech Inglot Zaawansowane C++");
+    window.resize(1200, 600);
     ChessBoardWidget *chessBoardWidget = new ChessBoardWidget(&window);
     ChessFiguresLayout *chessFiguresLayout = new ChessFiguresLayout(&window);
 
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     mainLayout->addWidget(chessFiguresLayout, 1,1);
 
     window.setLayout(mainLayout);
-
     window.show();
     return app.exec();
 }
+

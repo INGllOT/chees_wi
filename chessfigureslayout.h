@@ -19,16 +19,30 @@ private:
     QGridLayout *gridLayout;
     QGridLayout *capturedWhiteLeftLayout;
     QGridLayout *capturedBlackRightLayout;
-
-    int selectedX, selectedY; // To keep track of the selected piece's position
-    bool pieceSelected;
-
+    QGridLayout* returnGridLayoutFromBoardMetrix();
     Board board;
 
-    // Methods for creating the chessboard and captured piece sections
+    int selectedX, selectedY;
+
+    int leftX = 0;
+    int leftY = 0;
+
+    int rightX = 0;
+    int rightY = 0;
+
+    bool pieceSelected;
+
+
     void handleResetButtonClick();
-    QGridLayout* returnGridLayoutFromBoardMetrix();
+    void clearCapturedPieces();
+    void clearChessBoard();
+    void initializeCapturedWhiteLeftLayout();
+    void initializeCapturedBlackRightLayout();
     void onPieceClicked(int row, int col);
+    void initializeBoard();
+
+private slots:
+    void resetGame();
 
 };
 

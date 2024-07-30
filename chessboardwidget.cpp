@@ -8,20 +8,7 @@ ChessBoardWidget::ChessBoardWidget(QWidget *parent) : QWidget(parent) {
         QVBoxLayout *layout = new QVBoxLayout(this);
         QHBoxLayout *mainLayout = new QHBoxLayout;
 
-        // Dodawanie planszy i przycisku z nazwą gracza
-        QPushButton *playerButton = new QPushButton("", this);
-        playerButton->setFlat(true);
-        playerButton->setStyleSheet("font-weight: bold; background-color: lightblue;");
-        playerButton->setFixedSize(180, 40); // Ustawienie rozmiaru przycisku
-        playerButton->setSizePolicy(QSizePolicy::Preferred, QSizePolicy::Fixed);
-        playerButton->setEnabled(false);
-
-        // Dodanie przycisku resetu
-        QPushButton *resetButton = new QPushButton("Reset", this);
-        resetButton->setFixedSize(100, 40); // Ustawienie rozmiaru przycisku
-
         returnGridLayoutFromBoardMetrix();
-
 
         // Tworzenie pól na zbite figury po lewej stronie planszy
         QGridLayout *capturedWhiteLeftLayout = new QGridLayout;
@@ -57,9 +44,7 @@ ChessBoardWidget::ChessBoardWidget(QWidget *parent) : QWidget(parent) {
         mainLayout->addLayout(gridLayout);
         mainLayout->addLayout(capturedBlackRightLayout);
 
-        layout->addWidget(playerButton, 0, Qt::AlignCenter);
         layout->addLayout(mainLayout);
-        layout->addWidget(resetButton, 0, Qt::AlignCenter);
         setLayout(layout);
 }
 
@@ -75,11 +60,11 @@ QGridLayout* ChessBoardWidget::returnGridLayoutFromBoardMetrix(){
             if((row + col) % 2 == 0) {
                 square = new QLabel(this);
                 square->setFixedSize(60, 60);
-                square->setStyleSheet("background-color: gray;");
+                square->setStyleSheet("background-color: white;");
             } else {
                 square = new QLabel(this);
                 square->setFixedSize(60, 60);
-                square->setStyleSheet("background-color: white;");
+                square->setStyleSheet("background-color: gray;");
             }
 
             gridLayout->addWidget(square, row, col);
