@@ -12,7 +12,7 @@ class Piece : public QLabel {
     Q_OBJECT
 
 public:
-    Piece(int y , int x, const QPixmap& pixmap, QWidget* parent = nullptr, const QString& color = "", const QString& name = "");
+    explicit Piece(int y , int x, const QPixmap& pixmap, QWidget* parent = nullptr, const QString& color = "", const QString& name = "");
     QString name;
     QString getColor() const;
 

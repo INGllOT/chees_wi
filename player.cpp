@@ -1,10 +1,11 @@
 #include "player.h"
-#include <string>
-#include <vector>
 using namespace std;
 
-Player::Player() {
-    vector<string> figures;
+Player::Player(QString name): name(name){
+
+}
 
 
+QString Player::getName() {
+    return name;
 }

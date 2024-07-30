@@ -15,6 +15,8 @@ ChessFiguresLayout::ChessFiguresLayout(QWidget *parent) : QWidget(parent) {
     QVBoxLayout *layout = new QVBoxLayout(this);
     QHBoxLayout *mainLayout = new QHBoxLayout;
     gridLayout = new QGridLayout;
+    player1 = new Player("Player1");
+    player2 = new Player("Player2");
 
     // Ustawienie przycisku z kolejnoscia ruchu gracza
     playerButton_ = new QPushButton("white", this);
@@ -159,20 +161,21 @@ void ChessFiguresLayout::onPieceClicked(int row, int col) {
         auto destinationPiece = qobject_cast<Piece*>(gridLayout->itemAtPosition(row, col)->widget());
 
         if(movingPiece->isValidMove(selectedY, selectedX, row , col, destinationPiece, movingPiece)){
+            qDebug() << "If Valid move" <<movingPiece->isValidMove(selectedY, selectedX, row , col, destinationPiece, movingPiece) <<"";
 
             if (movingPiece && movingPiece->getColor() == playerButton_->text()) {
                 // Sprawdzanie czy kolej gracza
-                qDebug() << "Sprawdzanie czy kolej gracza";
+               // qDebug() << "Sprawdzanie czy kolej gracza";
 
                 // board.movePiece(selectedY, selectedX, row, col);
 
                 if(movingPiece->getColor() == destinationPiece->getColor()) {
                     // Poruszanie pionkiem w ten sam kolor
-                    qDebug() << "Poruszanie pionkiem w ten sam kolor";
+                   // qDebug() << "Poruszanie pionkiem w ten sam kolor";
 
                 } else if(movingPiece->getColor() != "none" && destinationPiece->getColor() == "none") {
                     // Poruszanie pionkiem w puste miejsce
-                    qDebug() << "Poruszanie pionkiem w puste miejsce";
+                    //qDebug() << "Poruszanie pionkiem w puste miejsce";
 
                     movingPiece->setPosition(row, col);
                     gridLayout->addWidget(movingPiece, row, col);
@@ -184,7 +187,7 @@ void ChessFiguresLayout::onPieceClicked(int row, int col) {
 
                 } else if(destinationPiece->getColor() != "none" && movingPiece->getColor() != "none" && movingPiece->getColor() != destinationPiece->getColor()) {
                     // Poruszanie pionkiem w miejsce przeciwnego pionka/ koloru
-                    qDebug() << "Poruszanie pionkiem w miejsce przeciwnego pionka/ koloru - kill move";
+                   // qDebug() << "Poruszanie pionkiem w miejsce przeciwnego pionka/ koloru - kill move";
 
                     if(destinationPiece->getColor() == "white") {
                         //Wsadzanie zbitego pionka na lewo
@@ -199,7 +202,7 @@ void ChessFiguresLayout::onPieceClicked(int row, int col) {
 
                     if(destinationPiece->getColor() == "black") {
                         //Wsadzanie zbitego pionka na prawo
-                        qDebug() << "Wsadzanie zbitego pionka na prawo";
+                        //qDebug() << "Wsadzanie zbitego pionka na prawo";
 
                         capturedBlackRightLayout->addWidget(new Pawn(0, 0, destinationPiece->pixmap(), this, "none"), rightX, rightY);
                         rightY ++;

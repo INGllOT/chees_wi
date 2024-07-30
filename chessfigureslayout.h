@@ -2,6 +2,7 @@
 #define CHESSFIGURESLAYOUT_H
 
 #include "board.h"
+#include "player.h"
 #include <QtWidgets>
 #include <QPixmap>
 #include <QLabel>
@@ -21,6 +22,8 @@ private:
     QGridLayout *capturedBlackRightLayout;
     QGridLayout* returnGridLayoutFromBoardMetrix();
     Board board;
+    Player *player1;
+    Player *player2;
 
     int selectedX, selectedY;
 

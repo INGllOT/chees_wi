@@ -9,7 +9,7 @@ bool Bishop::isValidMove(int startXRow, int startYColumn, int endXRow, int endYC
     int rowDiff = abs(endXRow - startXRow);
     int colDiff = abs(endYColumn - startYColumn);
 
-    // Check if the move is diagonal
+    // Czy ruch jest diagonalny
     if (rowDiff != colDiff) {
         return false;
     }

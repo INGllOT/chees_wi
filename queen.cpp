@@ -6,11 +6,11 @@ Queen::Queen(int x, int y, const QPixmap& pixmap, QWidget* parent, const QString
 }
 
 bool Queen::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece)  {
-    // Calculate the difference in rows and columns
+    // Różnica w wierszach i kolumnach
     int rowDiff = abs(endXRow - startXRow);
     int colDiff = abs(endYColumn - startYColumn);
 
-    // Check if the move is either straight (rook-like) or diagonal (bishop-like)
+    // Czy ruch jest prosty (jak wieża) czy diagonalny (jak goniec)
     bool isStraightMove = (startXRow == endXRow || startYColumn == endYColumn);
     bool isDiagonalMove = (rowDiff == colDiff);
 

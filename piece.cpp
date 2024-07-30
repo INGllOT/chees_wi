@@ -30,7 +30,7 @@ void Piece::setRow(int x) {
 }
 
 void Piece::setPosition(int newRow, int newCol) {
-     qDebug() << "Hello World! Piece clicked at position: (" << newRow << ", " << newCol << " "<< getColor() << ")";
+     //qDebug() << "Hello World! Piece clicked at position: (" << newRow << ", " << newCol << " "<< getColor() << ")";
 
     m_x = newRow;
     m_y = newCol;
