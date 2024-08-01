@@ -4,7 +4,7 @@ Pawn::Pawn(int x, int y, const QPixmap& pixmap, QWidget* parent, const QString& 
     : Piece(x, y, pixmap, parent, color) {
 }
 
-bool Pawn::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece)  {
+bool Pawn::isValidMove(int startXRow, int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece, QGridLayout *gridLayout)  {
     int direction = (color == "white") ? 1 : -1; // Determine direction based on pawn color
     int startRow = (color == "white") ? 4 : 3;  // Starting row for initial two-square move
     // qDebug() << "Paw start row/col(" << startXRow << ", " <<   startYColumn <<")";
@@ -12,27 +12,20 @@ bool Pawn::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYCol
 
     // Pierwszy ruch
     if(isFirstMove == true) {
-        // qDebug() << "" << (startRow == endXRow) << " " << (startYColumn == endYColumn) << "" "";
-        // qDebug() << "" << (startRow + 1 == endXRow) << " " << (startYColumn == endYColumn) << "" "";
-        // qDebug() << "" << startRow <<" "  <<  endXRow << " " << startYColumn << " " <<  endYColumn << "" "";
-
 
         if (startRow == endXRow && startYColumn == endYColumn) {
-            qDebug() << "aaa" ;
 
             isFirstMove = false;
             return true;
         }
 
         if (startRow + 1 == endXRow && startYColumn == endYColumn && this -> getColor() == "white") {
-            qDebug() << "bbbbb" ;
 
             isFirstMove = false;
             return true;
         }
 
         if (startRow - 1 == endXRow && startYColumn == endYColumn && this -> getColor() == "black") {
-            qDebug() << "CCC" ;
 
             isFirstMove = false;
             return true;
@@ -41,7 +34,6 @@ bool Pawn::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYCol
 
     } else {
         qDebug() << "Else" ;
-
 
         // Kill move
         if(movingPiece->getColor() == "white") {

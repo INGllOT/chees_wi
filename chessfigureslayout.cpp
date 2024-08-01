@@ -160,8 +160,8 @@ void ChessFiguresLayout::onPieceClicked(int row, int col) {
         auto movingPiece = qobject_cast<Piece*>(gridLayout->itemAtPosition(selectedY, selectedX)->widget());
         auto destinationPiece = qobject_cast<Piece*>(gridLayout->itemAtPosition(row, col)->widget());
 
-        if(movingPiece->isValidMove(selectedY, selectedX, row , col, destinationPiece, movingPiece)){
-            qDebug() << "If Valid move" <<movingPiece->isValidMove(selectedY, selectedX, row , col, destinationPiece, movingPiece) <<"";
+        if(movingPiece->isValidMove(selectedY, selectedX, row , col, destinationPiece, movingPiece, gridLayout)){
+            qDebug() << "If Valid move" <<movingPiece->isValidMove(selectedY, selectedX, row , col, destinationPiece, movingPiece, gridLayout) <<"";
 
             if (movingPiece && movingPiece->getColor() == playerButton_->text()) {
                 // Sprawdzanie czy kolej gracza

@@ -5,8 +5,8 @@ King::King(int x, int y, const QPixmap& pixmap, QWidget* parent, const QString& 
 
 }
 
-
-bool King::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece)  {
+//  Knights can jump over other pieces, so there's no need to check if the path is clear. < note
+bool King::isValidMove(int startXRow, int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece, QGridLayout *gridLayout)  {
     // Różnica w wierszach i kolumnach
     int rowDiff = abs(endXRow - startXRow);
     int colDiff = abs(endYColumn - startYColumn);
@@ -17,9 +17,9 @@ bool King::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYCol
     }
 
     // Jeśli pole docelowe jest zajęte przez pionek tego samego koloru, ruch jest nieważny
-    if (destinationPiece != nullptr && destinationPiece->getColor() == this->getColor()) {
-        return false;
-    }
+    // if (destinationPiece->getColor() == this->getColor()) {
+    //     return false;
+    // }
 
     return true;
 }

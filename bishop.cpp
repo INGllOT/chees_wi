@@ -5,7 +5,7 @@ Bishop::Bishop(int x, int y, const QPixmap& pixmap, QWidget* parent, const QStri
 }
 
 
-bool Bishop::isValidMove(int startXRow, int startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece) {
+bool Bishop::isValidMove(int startXRow, int startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece, QGridLayout *gridLayout) {
     int rowDiff = abs(endXRow - startXRow);
     int colDiff = abs(endYColumn - startYColumn);
 
@@ -14,7 +14,25 @@ bool Bishop::isValidMove(int startXRow, int startYColumn, int endXRow, int endYC
         return false;
     }
 
+    // Determine the direction of movement
+    int rowDirection = (endXRow - startXRow) > 0 ? 1 : -1;
+    int colDirection = (endYColumn - startYColumn) > 0 ? 1 : -1;
 
+    // Czy każdy kwadrat wzdłuż ścieżki diagonalnej
+    int checkRow = startXRow + rowDirection;
+    int checkCol = startYColumn + colDirection;
+    while (checkRow != endXRow && checkCol != endYColumn) {
+
+        QWidget* widget = gridLayout->itemAtPosition(checkRow, checkCol)->widget();
+        Piece* piece = qobject_cast<Piece*>(widget);
+
+        if (piece->getColor() != "none") {
+            return false;
+        }
+
+        checkRow += rowDirection;
+        checkCol += colDirection;
+    }
 
     return true;
 }

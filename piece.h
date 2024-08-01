@@ -28,7 +28,7 @@ public:
     void setPosition(int row, int col);
     void setColor(QString color) const;
 
-    virtual bool isValidMove(int startXRow,int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece);
+    virtual bool isValidMove(int startXRow,int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece, QGridLayout* gridLayout);
 
 
 signals:

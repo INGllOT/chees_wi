@@ -31,7 +31,6 @@ void Piece::setRow(int x) {
 
 void Piece::setPosition(int newRow, int newCol) {
      //qDebug() << "Hello World! Piece clicked at position: (" << newRow << ", " << newCol << " "<< getColor() << ")";
-
     m_x = newRow;
     m_y = newCol;
 }
@@ -50,7 +49,7 @@ void Piece::setColor(QString color) const {
     color = color;
 }
 
-bool Piece::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece)  {
+bool Piece::isValidMove(int startXRow, int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece, QGridLayout *gridLayout)  {
 
     return false;
 }

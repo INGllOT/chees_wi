@@ -5,7 +5,7 @@ Horse::Horse(int x, int y, const QPixmap& pixmap, QWidget* parent, const QString
 
 }
 
-bool Horse::isValidMove(int startXRow,int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece)  {
+bool Horse::isValidMove(int startXRow, int  startYColumn, int endXRow, int endYColumn, Piece* destinationPiece, Piece* movingPiece, QGridLayout *gridLayout)  {
     // Różnica w wierszach i kolumnach
     int rowDiff = abs(endXRow - startXRow);
     int colDiff = abs(endYColumn - startYColumn);
